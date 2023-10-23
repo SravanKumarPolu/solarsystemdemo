@@ -37,39 +37,94 @@ body {
   position: absolute;
   border-style: solid;
   border-color: white transparent transparent transparent;
-  border-width: 0.1rem 0.1rem 0.1rem 0.1rem;
+  border-width: 0.1rem;
   border-radius: 50%;
 }
 .mercury {
   top: -2em;
-  left: -3em;
+  left: -2em;
+  bottom: 2em;
   color: red;
-  width: 15em;
-  height: 15em;
-  animation: orbit 1s linear infinite;
+  width: 14em;
+  height: 14em;
+  animation: orbit 2s linear infinite;
 }
 .venus {
-  top: -5em;
-  left: -7em;
+  top: -4em;
+  left: -6em;
+  right: -4rem;
+  bottom: -6em;
   color: aqua;
-  width: 23em;
-  height: 23em;
-  animation: orbit 5.5s linear infinite;
+  width: 21em;
+  height: 20em;
+  animation: orbit 10.5s linear infinite;
 }
 .earth {
-  top: -12em;
-  left: -13em;
+  top: -9em;
+  left: -10em;
   color: #ffff33;
-  width: 35em;
-  height: 35em;
-  animation: orbit 36.5s linear infinite;
+  width: 28em;
+  height: 29em;
+  animation: orbit 24.5s linear infinite;
 }
 .mars {
-  top: -20em;
-  left: -23em;
-  border-radius: 60%;
-  width: 48em;
-  height: 50em;
+  top: -15em;
+  left: -15em;
+  border-radius: 90%;
+  width: 38em;
+  height: 40em;
   color: #7fff00;
-  animation: orbit1 70.5s linear infinite;
+  animation: orbit1 44.5s linear infinite;
+}
+.earth::before,
+.moon::before,
+.mars::before,
+.mercury::before,
+.venus::before {
+  content: "";
+  position: absolute;
+  border-radius: 50%;
+}
+.mercury::before {
+  top: 0.8em;
+  left: 2.5em;
+  width: 1.2em;
+  height: 1.2em;
+  background-color: #708090;
+}
+.venus::before {
+  top: 0.8em;
+  left: 4em;
+  width: 1.4em;
+  height: 1.4em;
+
+  background-color: #dcf3e5;
+}
+.earth::before {
+  top: 1em;
+  left: 5.5em;
+  width: 2em;
+  height: 2em;
+  text-align: center;
+
+  background-color: #005a8d;
+}
+.mars::before {
+  top: 1.5em;
+  left: 8.5em;
+  width: 1.8em;
+  height: 1.8em;
+  text-align: center;
+
+  background-color: #ffa572;
+}
+@keyframes orbit {
+  to {
+    transform: rotate(360deg);
+  }
+}
+@keyframes orbit1 {
+  to {
+    transform: rotate(-360deg);
+  }
 }
