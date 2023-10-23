@@ -69,13 +69,13 @@ body {
   animation: orbit 24.5s linear infinite;
 }
 .moon {
-  top: -0.5em;
-  left: 3em;
-  width: 6em;
+  top: -0.2em;
+  left: 4em;
+  width: 5em;
   height: 4em;
   color: #bd8480;
 
-  animation: orbit 2.5s linear infinite;
+  animation: orbit 1.3s linear infinite;
 }
 
 .mars {
@@ -131,10 +131,10 @@ body {
   background-color: #005a8d;
 }
 .moon::before {
-  top: -0.5em;
-  left: 1.2em;
-  width: 1em;
-  height: 1em;
+  top: -0.2em;
+  left: 1em;
+  width: 0.8em;
+  height: 0.8em;
   background-color: #9fa09c;
 }
 .mars::before {
