@@ -13,6 +13,7 @@ function App() {
             <div class="moon">Moon</div>
           </div>
           <div class="mars">Mars</div>
+          <div class="jupiter">Jupite</div>
         </div>
       </div>
     </div>
