@@ -155,6 +155,7 @@ body {
 
   background-color: #bcafb2;
 }
+
 @keyframes orbit {
   to {
     transform: rotate(360deg);
@@ -163,5 +164,16 @@ body {
 @keyframes orbit1 {
   to {
     transform: rotate(-360deg);
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    font-size: 6px;
+    width: 30%;
+    height: 30em;
+    margin-left: -20rem;
+
+    position: relative;
   }
 }
